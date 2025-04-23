@@ -17,6 +17,33 @@ This project demonstrates an automated test suite built using **Playwright for J
 - GitHub
 
 ---
+## 🧱 Test Architecture & Design
+### Modular Design:
+- Tests are logically grouped (UI and API) for clarity and maintainability.
+
+### Base Class:
+- Manages browser lifecycle using Playwright’s setup and teardown.
+
+### Separation of Concerns:
+- Utilities are decoupled from tests, keeping code reusable and clean.
+
+### Assertions:
+- Built using JUnit 5 assertions for reliability.
+
+---
+
+## 🧗 Challenges Encountered
+### Playwright CLI Binary Installation
+
+#### Drag-and-Drop Area Testing
+
+- Targeted a specific DOM area (#drag-drop-upload) for file interaction. Despite a known server-side 500 Internal Server Error, the UI test verifies correct file placement and interaction with the Upload button.
+
+#### Strict Mode in Playwright
+
+- Resolved locator conflicts by explicitly narrowing file input scope within the drag-and-drop component.
+
+---
 
 ## 🕹️ How to Run the Tests
 
@@ -31,4 +58,3 @@ This project demonstrates an automated test suite built using **Playwright for J
 1. Clone the repository:
    ```bash
    git clone https://github.com/BlertaKallollari/playwright-java-tests.git
-
