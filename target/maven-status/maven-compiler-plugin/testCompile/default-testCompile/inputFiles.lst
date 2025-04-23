@@ -1,1 +1,9 @@
-C:\Users\Perdorues\playwright-java-tests\src\test\java\UploadPageTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\ui\NoFileUploadTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\api\DeletePostTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\api\CreatePostsTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\api\PatchPostTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\api\GetPostsTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\api\UpdatePostTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\ui\DragAndDropUploadTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\ui\UploadButtonTest.java
+C:\Users\Perdorues\playwright-java-tests\src\test\java\ui\FileUploadTest.java

@@ -1,0 +1,35 @@
+# Java build output
+target/
+bin/
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Maven
+log/
+logs/
+*.log
+
+# Gradle
+.gradle/
+build/
+
+# Mac and system files
+.DS_Store
+Thumbs.db
+
+# Playwright
+test-results/
+playwright-report/
+
+# Uploaded test files or screenshots
+uploads/
+*.png
+*.jpeg

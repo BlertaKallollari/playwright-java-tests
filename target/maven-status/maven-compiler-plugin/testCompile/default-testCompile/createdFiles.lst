@@ -1,0 +1,9 @@
+api\PatchPostTest.class
+ui\DragAndDropUploadTest.class
+api\DeletePostTest.class
+ui\NoFileUploadTest.class
+api\CreatePostsTest.class
+api\GetPostsTest.class
+ui\FileUploadTest.class
+api\UpdatePostTest.class
+ui\UploadButtonTest.class

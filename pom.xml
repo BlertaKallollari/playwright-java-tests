@@ -9,15 +9,32 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source> <!-- Specify Java source version -->
+        <maven.compiler.target>1.8</maven.compiler.target> <!-- Specify Java target version -->
+    </properties>
+
     <build>
         <plugins>
+            <!-- Compiler plugin for setting Java version -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source> <!-- Java version to use -->
-                    <target>1.8</target> <!-- Java version to target -->
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <!-- Surefire plugin to run JUnit tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version> <!-- This version supports JUnit 5 -->
+                <configuration>
+                    <includes>
+                        <include>**/Test*.java</include>
+                    </includes>
                 </configuration>
             </plugin>
         </plugins>
@@ -28,15 +45,28 @@
         <dependency>
             <groupId>com.microsoft.playwright</groupId>
             <artifactId>playwright</artifactId>
-            <version>1.30.0</version>
+            <version>1.24.0</version>
         </dependency>
 
-        <!-- JUnit -->
+        <!-- JUnit dependencies for running tests -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
 </project>
